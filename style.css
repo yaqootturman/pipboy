@@ -55,6 +55,12 @@ ul > li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav-link{
   width:100%;
 }
 
+.center-image{
+  position: absolute;
+  margin:auto;
+  width:100%;
+}
+
 .center-image img{
   display: block;
   margin: auto;
@@ -77,11 +83,11 @@ ul > li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav-link{
 
 }
 
-.navbar{
+.navbar.navbar-light{
   border-bottom:2px solid;
   margin: 0px 10px;
 }
-.navbar::before, .navbar::after {
+.navbar.navbar-light::before, .navbar::after {
 
   height:5px;
   width:2px;
@@ -136,4 +142,30 @@ ul > li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav-link{
 
 .nav.nav-tabs > li:nth-child(1){
   opacity:.6;
+}
+
+.level-progress{
+  height: 10px;
+  border:2px solid;
+  display: inline-block;
+  width:70%;
+}
+
+.level-progress-indecator{
+  height:7px;
+  background: #14fe17;
+  position:relative;
+  width:70%;
+}
+
+.navbar.navbar-light.pip-footer{
+  border:none;
+}
+.navbar.pip-footer .col-3, .navbar.pip-footer .col-6{
+  background: rgba(0, 255, 48, .28);
+}
+
+.navbar.navbar-light.pip-footer .col-6{
+  margin: 0px 5px;
+  flex: 0 0 40%;
 }
